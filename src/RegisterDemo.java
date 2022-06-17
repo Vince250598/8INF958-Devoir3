@@ -1,3 +1,5 @@
+package src;
+
 /*
     The Kwik-E-Mart Cash Register
     Copyright (C) 2020 Sylvain Hallé
@@ -58,6 +60,8 @@ public class RegisterDemo
 
 		// Print receipt
 		System.out.println(register.print(grocery));
+		
+		System.out.println(Upc.getCheckDigit("61519314159"));
 
 		// Try to print another list of items. Since the paper roll is very small,
 		// we should run out of paper...
